@@ -1,4 +1,4 @@
-   <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -15,18 +15,15 @@
       --accent-soft: #dbeafe;
       --shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
     }
-
     * { box-sizing: border-box; }
-
     body {
       margin: 0;
       font-family: Inter, Arial, Helvetica, sans-serif;
       background: linear-gradient(180deg, #eef4ff 0%, var(--bg) 100%);
       color: var(--text);
       line-height: 1.55;
-      padding: 16px; 
+      padding: 16px;
     }
-
     .resume {
       max-width: 980px;
       margin: 0 auto;
@@ -36,14 +33,12 @@
       overflow: hidden;
       border: 1px solid rgba(229, 231, 235, 0.9);
     }
-
     .topbar {
       background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 45%, #60a5fa 100%);
       color: white;
       padding: 40px 30px;
       position: relative;
     }
-
     .photo {
       position: absolute;
       top: 32px;
@@ -58,89 +53,97 @@
       justify-content: center;
       overflow: hidden;
     }
-
     .photo img {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
-
     @media (max-width: 600px) {
-      .photo {
-        top: 20px;
-        right: 20px;
-        width: 75px;
-        height: 75px;
-      }
+      .photo { top: 20px; right: 20px; width: 75px; height: 75px; }
       .name { font-size: 1.8rem !important; }
       .topbar { padding: 30px 20px 20px; }
       .contact { flex-direction: column; gap: 4px; }
     }
-
-    .name {
-      font-size: 2.5rem;
-      font-weight: 800;
-      margin: 0;
-    }
-
-    .role {
-      margin: 8px 0 18px;
-      font-size: 1rem;
-      font-weight: 600;
-    }
-
-    .contact {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px 12px;
-      font-size: 0.9rem;
-      font-weight: 600;
-    }
-
-    .content {
-      display: grid;
-      grid-template-columns: 290px 1fr;
-    }
-
+    .name { font-size: 2.5rem; font-weight: 800; margin: 0; }
+    .role { margin: 8px 0 18px; font-size: 1rem; font-weight: 600; }
+    .contact { display: flex; flex-wrap: wrap; gap: 8px 12px; font-size: 0.9rem; font-weight: 600; }
+    .content { display: grid; grid-template-columns: 290px 1fr; }
     @media (max-width: 800px) {
       .content { grid-template-columns: 1fr; }
       .sidebar { border-right: none; border-bottom: 1px solid var(--line); }
     }
-
-    .sidebar {
-      background: #fbfdff;
-      border-right: 1px solid var(--line);
-      padding: 32px 25px;
-    }
-
+    .sidebar { background: #fbfdff; border-right: 1px solid var(--line); padding: 32px 25px; }
     .main { padding: 32px 25px; }
-
     .section { margin-bottom: 28px; }
-
-    .section-title {
-      font-size: 0.84rem;
-      text-transform: uppercase;
-      font-weight: 800;
-      color: var(--accent);
-      margin-bottom: 14px;
-    }
-
-    .skills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-
-    .tag {
-      padding: 6px 10px;
-      border-radius: 999px;
-      background: var(--accent-soft);
-      font-size: 0.85rem;
-      font-weight: 700;
-    }
-
+    .section-title { font-size: 0.84rem; text-transform: uppercase; font-weight: 800; color: var(--accent); margin-bottom: 14px; }
+    .skills { display: flex; flex-wrap: wrap; gap: 8px; }
+    .tag { padding: 6px 10px; border-radius: 999px; background: var(--accent-soft); font-size: 0.85rem; font-weight: 700; }
     .item { margin-bottom: 18px; }
     .item-title { font-weight: 800; }
     ul { margin-left: 18px; padding-left: 0; }
   </style>
-</
+</head>
+<body>
+  <div class="resume">
+    <header class="topbar">
+      <div class="photo">
+        <img src="image.jpg" alt="Profile" onerror="this.style.display='none';">
+      </div>
+      <h1 class="name">Soeun Jeong</h1>
+      <p class="role">Asia University Student | Finance</p>
+      <div class="contact">
+        <span>Student ID: 114035195</span>
+        <span>Email: qazwsxc66231@naver.com</span>
+        <span>Taichung, Taiwan</span>
+      </div>
+    </header>
+
+    <div class="content">
+      <aside class="sidebar">
+        <section class="section">
+          <div class="section-title">Education Summary</div>
+          <div class="item">
+            <div class="item-title">Asia University</div>
+            <div style="font-size:0.9rem;">Bachelor's Degree (Expected 2026)</div>
+            <div style="margin-top:8px; font-size:0.85rem; color:#374151;">
+              <strong>Course:</strong> 資訊와 科技1T<br/>
+              <strong>Code:</strong> 1142GRGRG000931T
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <div class="section-title">Profile</div>
+          <div style="font-size:0.9rem;">Motivated student majoring in Finance at Asia University. Interested in investment strategy and financial innovation.</div>
+        </section>
+        <section class="section">
+          <div class="section-title">Skills</div>
+          <div class="skills">
+            <div class="tag">Korean (Native)</div>
+            <div class="tag">English (Intermediate)</div>
+            <div class="tag">Financial Analysis</div>
+          </div>
+        </section>
+      </aside>
+
+      <main class="main">
+        <section class="section">
+          <div class="section-title">Academic Background</div>
+          <div class="item">
+            <div class="item-title">Asia University (Taiwan)</div>
+            <div>Finance & Management</div>
+            <ul>
+              <li>Focus on business model evolution and Fintech (Toss case study)</li>
+              <li>Sustainability project: Smiling Mountain Line, Taiwan</li>
+              <li>Corporate strategy and financial management research</li>
+            </ul>
+          </div>
+          <div class="item">
+            <div class="item-title">Seorak High School</div>
+            <ul><li>General academic curriculum</li></ul>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
